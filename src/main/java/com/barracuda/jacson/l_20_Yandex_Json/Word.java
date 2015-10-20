@@ -44,7 +44,7 @@ public final class Word {
         StringBuilder sb = new StringBuilder();
         for (Def defsb : getDef()) {
             sb.append(defsb);
-            sb.append("\n");
+            //sb.append("\n");
         }
         return "------\n" + sb.toString() + "-----";
     }

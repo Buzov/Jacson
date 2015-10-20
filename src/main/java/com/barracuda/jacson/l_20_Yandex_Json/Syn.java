@@ -61,7 +61,29 @@ public class Syn {
 
     @Override
     public String toString() {
-        return "Syn{" + "text=" + text + ", pos=" + pos + ", gen=" + gen + ", anm=" + anm + '}';
+        StringBuilder sb = new StringBuilder();
+        
+        if (text != null) {
+            sb.append("text=");
+            sb.append(text);
+            sb.append(", ");
+        }
+        if (pos != null) {
+            sb.append("pos=");
+            sb.append(pos);
+            sb.append(", ");
+        }
+        if (gen != null) {
+            sb.append("gen=");
+            sb.append(gen);
+            sb.append(", ");
+        }
+        if (anm != null) {
+            sb.append("anm=");
+            sb.append(anm);
+        }
+        //sb.append("\n");
+        return sb.toString();
     }
 
 }

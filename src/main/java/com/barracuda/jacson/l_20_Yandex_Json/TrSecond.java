@@ -30,7 +30,7 @@ public class TrSecond {
 
     @Override
     public String toString() {
-        return text + "\n";
+        return text;
     }
     
     

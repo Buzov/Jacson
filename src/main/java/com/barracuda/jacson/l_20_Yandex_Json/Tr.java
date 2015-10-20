@@ -131,8 +131,8 @@ public class Tr {
         if (anm != null) {
             sb.append("anm=");
             sb.append(anm);
-            sb.append("\n");
         }
+        sb.append("\n");
         if (getSyn() != null) {
             sb.append("     ");
             sb.append("Synonyms");
@@ -154,10 +154,12 @@ public class Tr {
             }
         }
         if (getEx() != null) {
+            
             sb.append("     ");
             sb.append("Examples");
             sb.append("\n");
             for (Ex exsb : getEx()) {
+                sb.append("\n");
                 sb.append("         ");
                 sb.append(exsb);
                 sb.append("\n");

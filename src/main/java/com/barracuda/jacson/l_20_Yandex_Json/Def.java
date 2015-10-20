@@ -74,7 +74,7 @@ public class Def {
         for (Tr trsb : getTr()) {
             sb.append(" ");
             sb.append(trsb);
-            sb.append("\n");
+            //sb.append("\n");
         }
         return sb.toString();
     }
